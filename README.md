@@ -1,0 +1,1 @@
+# fus-static-template
