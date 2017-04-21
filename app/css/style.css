@@ -42,7 +42,9 @@ nav {
     font-size: 40px;
     font-weight: 300; }
   nav .button-collapse {
-    margin-left: 16px; }
+    margin-left: 16px;
+    margin-top: 10px;
+    color: #21412a; }
   nav .brand-logo img {
     height: 78px; }
   nav ul li a {
