@@ -50,8 +50,9 @@ header {
 }
 
 nav {
-  height: 64px;
-  border-bottom: 5px solid $fus-gold;
+  height: 83px;
+  border-bottom: 3px solid $fus-gold;
+  background-color: #fff;
   .page-title {
     line-height: 64px;
     font-size: 40px;
@@ -64,8 +65,15 @@ nav {
 
   .brand-logo {
     img {
-      height: 54px;
-      margin-top: 5px;
+      height: 78px;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        color: #000;
+      }
     }
   }
 }
@@ -97,6 +105,7 @@ nav {
     a {
       height: 48px;
       line-height: 48px;
+      color: #000;
 
       i {
         height: 48px;
