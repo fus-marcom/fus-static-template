@@ -66,15 +66,20 @@ nav {
   }
 
   .brand-logo {
+    margin-left: 16px;
+
     img {
       height: 78px;
     }
   }
 
   ul {
+    margin-right: 16px;
+
     li {
       a {
         color: #000;
+        line-height: 80px;
       }
     }
   }
@@ -83,6 +88,10 @@ nav {
 .side-nav {
   max-width: 85%;
   z-index: 998;
+
+  .brand-logo {
+    margin-left: 0;
+  }
 
   .logo {
   height: 110px;
@@ -98,6 +107,7 @@ nav {
 
     img {
       width: 100%;
+      height: auto;
     }
   }
 
