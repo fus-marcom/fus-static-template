@@ -49,11 +49,21 @@ nav {
     margin-left: 16px; }
     nav .brand-logo img {
       height: 78px; }
+  nav .social {
+    position: absolute;
+    right: 16px; }
+    nav .social a svg {
+      fill: #21412a;
+      width: 30px; }
   nav ul {
     margin-right: 16px; }
-    nav ul li a {
-      color: #000;
-      line-height: 80px; }
+    nav ul li {
+      line-height: 48px;
+      height: 48px;
+      margin-top: 40px; }
+      nav ul li a {
+        color: #000;
+        line-height: 36px; }
 
 .side-nav {
   max-width: 85%;
@@ -71,7 +81,8 @@ nav {
       width: 100%;
       height: auto; }
   .side-nav li {
-    line-height: 48px; }
+    line-height: 48px;
+    margin-top: 0; }
     .side-nav li a {
       height: 48px;
       line-height: 48px;

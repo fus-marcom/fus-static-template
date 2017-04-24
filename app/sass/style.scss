@@ -73,13 +73,31 @@ nav {
     }
   }
 
+  .social {
+    position: absolute;
+    right: 16px;
+
+    a {
+      svg {
+        // SVG Icon Color
+        fill: $fus-green;
+        // SVG Icon Size
+        width: 30px;
+      }
+    }
+  }
+
   ul {
     margin-right: 16px;
 
     li {
+      line-height: 48px;
+      height: 48px;
+      margin-top: 40px;
+
       a {
         color: #000;
-        line-height: 80px;
+        line-height: 36px;
       }
     }
   }
@@ -113,6 +131,7 @@ nav {
 
   li {
     line-height: 48px;
+    margin-top: 0;
 
     a {
       height: 48px;
