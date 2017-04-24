@@ -44,12 +44,14 @@ nav {
   nav .button-collapse {
     margin-left: 16px;
     margin-top: 10px;
-    color: #21412a; }
+    color: #21412a;
+    padding: 8px; }
   nav .brand-logo {
-    margin-left: 16px; }
+    margin-left: 64px; }
     nav .brand-logo img {
       height: 78px; }
   nav .social {
+    height: 40px;
     position: absolute;
     right: 16px; }
     nav .social a svg {
@@ -64,6 +66,9 @@ nav {
       nav ul li a {
         color: #000;
         line-height: 36px; }
+  nav .search-icon svg {
+    width: 27px;
+    fill: #21412a; }
 
 .side-nav {
   max-width: 85%;
@@ -80,6 +85,19 @@ nav {
     .side-nav .logo img {
       width: 100%;
       height: auto; }
+  .side-nav .search input {
+    margin-left: 8px;
+    margin-right: 8px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    display: block;
+    height: 45px; }
+  .side-nav .search-icon svg {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
   .side-nav li {
     line-height: 48px;
     margin-top: 0; }

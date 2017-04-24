@@ -34,7 +34,7 @@ $(function() {
 
   scrollToTop();
 
-  $('.modal-trigger').leanModal();
+  $('.modal').modal();
 
  // Close side nav on tap for mobile but not wide screens
   let windowsize = $(window).width();
@@ -48,4 +48,6 @@ $(function() {
     closeOnClick: closeOnClickVal,
     menuWidth: 300
   });
+
+  $('.collapsible').collapsible();
 });
