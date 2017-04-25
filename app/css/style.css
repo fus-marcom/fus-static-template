@@ -97,19 +97,12 @@ nav {
   .side-nav .search-icon svg {
     position: absolute;
     top: 10px;
-    right: 10px; }
+    right: 10px;
+    width: 27px;
+    fill: #21412a; }
   .side-nav li {
     line-height: 48px;
     margin-top: 0; }
-    .side-nav li a {
-      height: 48px;
-      line-height: 48px;
-      color: #000; }
-      .side-nav li a i {
-        height: 48px;
-        line-height: 48px;
-        float: left;
-        margin-right: 8px; }
 
 #hero {
   min-height: 50vh; }

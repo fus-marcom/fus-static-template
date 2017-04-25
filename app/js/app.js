@@ -46,8 +46,28 @@ $(function() {
   //Init side nav
   $(".button-collapse").sideNav({
     closeOnClick: closeOnClickVal,
-    menuWidth: 300
+    menuWidth: 300,
+  });
+
+  // Show sideNav
+  $('.top-nav-links li').click(function () {
+    let indexNum = $(this).attr('indexNum');
+    $('.button-collapse').sideNav('show');
+    $('.collapsible').collapsible('open', indexNum);
+    $('#sidenav-overlay').click(function () {
+      //collapse all side nav items
+      $('.collapsible').collapsible('close', indexNum);
+    });
   });
 
   $('.collapsible').collapsible();
+
+
+ const linkArr = $('.top-nav-links li');
+
+ for (let i = 0; i < linkArr.length; i++) {
+   $(linkArr[i]).attr('indexNum', i);
+ }
+
+
 });
