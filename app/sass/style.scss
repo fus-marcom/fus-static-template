@@ -105,11 +105,27 @@ nav {
   }
 
   .search-icon {
+    float: left;
     svg {
       width: 27px;
       fill: #21412a;
     }
   }
+
+  #top-nav-search {
+    input {
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 16px;
+      height: 30px;
+      transition: .2s cubic-bezier(.4,0,.2,1);
+      width: 0;
+    }
+
+    input.open {
+      width: 250px;
+    }
+  }
+
 }
 
 .side-nav {

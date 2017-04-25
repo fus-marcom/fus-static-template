@@ -50,7 +50,7 @@ $(function() {
   });
 
   // Show sideNav
-  $('.top-nav-links li').click(function () {
+  $('.top-nav-links li').not('#top-nav-search').click(function () {
     let indexNum = $(this).attr('indexNum');
     $('.button-collapse').sideNav('show');
     $('.collapsible').collapsible('open', indexNum);
@@ -62,12 +62,17 @@ $(function() {
 
   $('.collapsible').collapsible();
 
-
+// Top nav links array
  const linkArr = $('.top-nav-links li');
-
+// Add index numbers as an attribute to top nav li's
  for (let i = 0; i < linkArr.length; i++) {
    $(linkArr[i]).attr('indexNum', i);
  }
+
+ //Top nav search input
+ $('#top-nav-search').click(function () {
+   $('#top-nav-search input').addClass('open');
+ });
 
 
 });
