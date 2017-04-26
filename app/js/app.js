@@ -70,8 +70,19 @@ $(function() {
  }
 
  //Top nav search input
- $('#top-nav-search').click(function () {
-   $('#top-nav-search input').addClass('open');
+ $('nav .search-icon').click(function () {
+   if($('#search-input').hasClass('open')) {
+     // Do the search
+     console.log('search');
+   } else {
+     $('#search-input').addClass('open');
+     $('#search-input input').focus();
+
+     //Close btn
+     $('#search-input svg').click(function () {
+       $('#search-input').removeClass();
+     });
+   }
  });
 
 

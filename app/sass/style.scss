@@ -107,25 +107,45 @@ nav {
   .search-icon {
     float: left;
     svg {
+      cursor: pointer;
       width: 27px;
       fill: #21412a;
+      padding: 4px 8px;
+      box-sizing: content-box;
     }
   }
 
-  #top-nav-search {
+  #search-input {
+    float: left;
     input {
       color: rgba(0, 0, 0, 0.54);
+      display: block;
       font-size: 16px;
       height: 30px;
       transition: .2s cubic-bezier(.4,0,.2,1);
       width: 0;
     }
 
-    input.open {
-      width: 250px;
+    svg {
+      display: none;
+      position: absolute;
+      top: 45px;
+      right: 18px;
     }
+
+
   }
 
+  #search-input.open {
+    input {
+      width: 250px;
+    }
+
+    svg {
+      display: block;
+
+    }
+  }
 }
 
 .side-nav {

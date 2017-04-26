@@ -69,16 +69,29 @@ nav {
   nav .search-icon {
     float: left; }
     nav .search-icon svg {
+      cursor: pointer;
       width: 27px;
-      fill: #21412a; }
-  nav #top-nav-search input {
-    color: rgba(0, 0, 0, 0.54);
-    font-size: 16px;
-    height: 30px;
-    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 0; }
-  nav #top-nav-search input.open {
+      fill: #21412a;
+      padding: 4px 8px;
+      box-sizing: content-box; }
+  nav #search-input {
+    float: left; }
+    nav #search-input input {
+      color: rgba(0, 0, 0, 0.54);
+      display: block;
+      font-size: 16px;
+      height: 30px;
+      transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      width: 0; }
+    nav #search-input svg {
+      display: none;
+      position: absolute;
+      top: 45px;
+      right: 18px; }
+  nav #search-input.open input {
     width: 250px; }
+  nav #search-input.open svg {
+    display: block; }
 
 .side-nav {
   max-width: 85%;
