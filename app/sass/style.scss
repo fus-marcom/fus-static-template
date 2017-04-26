@@ -77,7 +77,7 @@ nav {
   .social {
     height: 40px;
     position: absolute;
-    right: 16px;
+    right: 120px;
 
     a {
       svg {
@@ -86,6 +86,24 @@ nav {
         // SVG Icon Size
         width: 30px;
       }
+    }
+  }
+
+  .button {
+    position: fixed;
+    right: 16px;
+    top: 6px;
+    background: $fus-green;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+
+    &:hover {
+      background: $fus-green;
     }
   }
 

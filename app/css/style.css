@@ -53,10 +53,23 @@ nav {
   nav .social {
     height: 40px;
     position: absolute;
-    right: 16px; }
+    right: 120px; }
     nav .social a svg {
       fill: #21412a;
       width: 30px; }
+  nav .button {
+    position: fixed;
+    right: 16px;
+    top: 6px;
+    background: #21412a;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    font-weight: 500;
+    text-transform: uppercase; }
+    nav .button:hover {
+      background: #21412a; }
   nav ul {
     margin-right: 16px; }
     nav ul li {
