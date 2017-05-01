@@ -251,8 +251,22 @@ nav {
 
 #hero {
   min-height: 80vh;
-  background-image: url(https://unsplash.it/2600/1300/?random);
+  background-image: url(https://unsplash.it/2600/1300?image=823);
   background-attachment: fixed;
+  background-size: cover;
+
+  @media screen and (max-width: 1200px) {
+    background-image: url("https://unsplash.it/1200/800?image=823");
+  }
+
+  @media screen and (max-width: 600px) {
+    background-image: url("https://unsplash.it/600/400?image=823");
+  }
+
+  @media screen and (max-width: 500px) {
+    background-image: url("https://unsplash.it/550/700?image=823");
+    background-position: center;
+  }
 }
 
 .scroll-to-top {
